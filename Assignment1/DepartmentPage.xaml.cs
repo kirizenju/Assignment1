@@ -222,5 +222,11 @@ namespace Assignment1
             _currentPageIndex--;
             Paginate();
         }
+        private void btn_LogOut_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            Close();
+        }
     }
 }
