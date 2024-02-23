@@ -67,6 +67,7 @@ namespace Assignment1
                 {
                     MessageBox.Show("Insert Success!");
                     _accountRepository.AddStaffAccount(staff);
+                    dtg_Staff.ItemsSource = _accountRepository.GetStaffAccounts();
                     ClearInputFields();
                 }
                 else
@@ -181,6 +182,11 @@ namespace Assignment1
             }
         }
 
-
+        private void btn_LogOut_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            Close();
+        }
     }
 }

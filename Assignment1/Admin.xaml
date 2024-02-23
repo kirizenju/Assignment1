@@ -25,14 +25,12 @@
                 <Button x:Name="btn_Edit" Content="Edit" Canvas.Left="32" Canvas.Top="51" Height="32" Width="114" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.535,-0.483" Click="btn_Edit_Click"/>
                 <Button x:Name="btn_Delete" Content="Delete" Canvas.Left="32" Canvas.Top="93" Height="32" Width="114" RenderTransformOrigin="0.535,-0.483" HorizontalAlignment="Center" VerticalAlignment="Top" Click="btn_Delete_Click"/>
                 <Button x:Name="btn_Add" Content="Add" Canvas.Left="32" Canvas.Top="8" Height="32" Width="114" RenderTransformOrigin="0.535,-0.483" HorizontalAlignment="Center" VerticalAlignment="Top" Click="btn_Add_Click"/>
+                <Button x:Name="btn_LogOut" Content="LogOut" Canvas.Left="32" Canvas.Top="135" Height="32" Width="114" RenderTransformOrigin="0.535,-0.483" HorizontalAlignment="Center" VerticalAlignment="Top" Click="btn_LogOut_Click"/>
 
             </Canvas>
         </GroupBox>
         <GroupBox Height="207" Header="Staff" Width="760" Canvas.Left="10" Canvas.Top="267" HorizontalAlignment="Center" VerticalAlignment="Top">
             <DataGrid x:Name="dtg_Staff" IsReadOnly="True" SelectionChanged="Dtg_Staff_SelectionChanged" d:ItemsSource="{d:SampleData ItemCount=5}"/>
         </GroupBox>
-        <Label Content="Filter" Canvas.Left="14" Canvas.Top="223" HorizontalAlignment="Center" VerticalAlignment="Top" Width="64" Height="23"/>
-        <TextBox x:Name="txt_Search" Canvas.Left="74" TextWrapping="Wrap" Canvas.Top="221" Width="175" Height="31" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Button x:Name="btn_Search" Content="Search" Canvas.Left="279" Canvas.Top="221" HorizontalAlignment="Center" VerticalAlignment="Top" Width="100" Height="31"/>
     </Canvas>
 </Window>
